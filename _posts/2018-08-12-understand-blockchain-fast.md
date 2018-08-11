@@ -4,11 +4,11 @@ title: "[搞一搞]区块链"
 date: 2018-08-12 02:10 +0800
 ---
 
-2018年, 加密货币/区块链曾占据各种头条, 至今尚未停歇, 为什么一盘冷饭会炒这么久, 让人诧异. 没有调查就没有发言权, 今天搬运一个 "learn blockchain the hard way", 和大家一起玩一下.
+2018年, 加密货币/区块链曾占据各种头条, 至今尚未停歇, 为什么一盘冷饭会炒这么久, 让人诧异. 没有调查就没有发言权, 今天<b>搬运</b>一个 "learn blockchain the hard way", 学习一下区块链.
 
 <b>注意: </b>
 
-* <b>这是一盘冷饭, 想吃新鲜的请点击连接: [Learn Blockchains by Building One](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46)</b>
+* <b>这篇是我嚼过的, 原文请点击连接: [Learn Blockchains by Building One](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46)</b>
 * <b>想直接看最终代码的, 点击链接: [blockchain.py](https://github.com/dvf/blockchain/blob/master/blockchain.py)
 
 > [搞一搞]: 这是一个新的尝试, 会自制或者搬运一些有意思的小实验.
@@ -421,16 +421,16 @@ class Blockchain(object)
 
 ## 跑起来
 
-以上只是简单的示例, 如果要开发一个虚拟货币或者区块链游戏, 还有很多工作要做, 但对不了解区块链的同学来讲是个不错的开始
+启动三个区块链程度, 相互注册, 并且进行一些交易和挖矿:
 
 ```bash
-# 启动服务, 需要同时启动三个服务:
+# 同时启动三个节点
 nohup python blockchain.py -p 5000 2>&1 > blockchain.5000.log &
 nohup python blockchain.py -p 5001 2>&1 > blockchain.5001.log &
 nohup python blockchain.py -p 5002 2>&1 > blockchain.5002.log &
 
 sleep 1
-# 服务之间相互注册:
+# 节点之间相互注册:
 curl -X POST \
   http://localhost:5000/nodes/register \
   -H 'Content-Type: application/json' \
@@ -488,3 +488,14 @@ curl -X GET http://localhost:5001/nodes/resolve
 curl -X GET http://localhost:5002/nodes/resolve
 
 ```
+
+## 总结
+
+区块链很复杂然而有很简单, 简单到可以用300行写一个 *hello blockchain* 出来, 复杂到一个 *hello blockchain* 竟然需要300行代码.
+
+以上只是简单的示例, 如果要开发一个虚拟货币或者区块链游戏, 还有很多工作要做, 但对不了解区块链的同学来讲是个不错的开始.
+
+----
+
+文章搬运自: [https://hackernoon.com/learn-blockchains-by-building-one-117428612f46](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46), 感谢大神: [Daniel van Flymen](https://hackernoon.com/@vanflymen?source=post_header_lockup)
+
