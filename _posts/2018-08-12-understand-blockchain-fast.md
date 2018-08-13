@@ -491,7 +491,7 @@ curl -X GET http://localhost:5002/nodes/resolve
 
 ## 总结
 
-区块链很复杂然而有很简单, 简单到可以用300行写一个 *hello blockchain* 出来, 复杂到一个 *hello blockchain* 竟然需要300行代码.
+区块链很复杂然而又很简单, 简单到可以用300行写一个 *hello blockchain* 出来, 复杂到一个 *hello blockchain* 竟然需要300行代码.
 
 以上只是简单的示例, 如果要开发一个虚拟货币或者区块链游戏, 还有很多工作要做, 但对不了解区块链的同学来讲是个不错的开始.
 
