@@ -178,7 +178,7 @@ while sha256(f'{x*y}'.encode()).hexdigest()[-1] != "0":
 print(f'The solution is y = {y}')
 ```
 
-## web API
+## API
 
 接下来使用 *Flask* 进行 *API* 封装, 以下是各个接口: 挖矿, 交易, 获取区块列表
 
