@@ -5,7 +5,7 @@ date: 2018-09-28 01:02 +0800
 ---
 
 字符串相似度是一个非常有意思的问题，之前没有仔细考虑过这个问题，只是项目有一个相关的需求，场景比较局限，解决的方案也不叫*hack*，尚未验证效果，但应该能满足当下的场景的需求。本文并不打算做一个全面的关于相似度匹配的综述，只是提供一个使用特定场景的简单方案。
-具体业务场景就不做还原了，数据基本是两组字符串，字符串之前期望是相同，亦或者略有差异，差异较大则为异常数据，需要将差异较大的数据筛选出来。如：
+具体业务场景就不做还原了，数据基本是两组字符串，字符串之前期望是相同，亦或者略有差异，差异较大则为异常数据，需求是将差异较大的数据筛选出来。如：
 
 | id | origin | target
 | ---|--------|-------
@@ -41,7 +41,11 @@ public static Integer distance(String a, String b) {
             if (a.charAt(i) == b.charAt(j)) {
                 distance[i + 1][j + 1] = distance[i][j];
             } else {
-                distance[i + 1][j + 1] = Math.min(distance[i][j + 1], Math.min(distance[i + 1][j], distance[i][j])) + 1;
+                distance[i + 1][j + 1] = Math.min(
+                    distance[i][j + 1], Math.min(
+                        distance[i + 1][j], distance[i][j]
+                    )
+                ) + 1;
             }
         }
     }
@@ -70,11 +74,6 @@ public static Double similarity(String a, String b) {
         return 0.;
     }
 
-    Integer m = match(a, b);
-    return 1. * (m * m) / (a.length() * b.length());
-}
-
-private static Integer match(String a, String b) {
     int[][] match = new int[a.length() + 1][b.length() + 1];
 
     for (int i = 0; i < a.length(); i++) {
@@ -82,11 +81,16 @@ private static Integer match(String a, String b) {
             if (a.charAt(i) == b.charAt(j)) {
                 match[i + 1][j + 1] = match[i][j] + 1;
             } else {
-                match[i + 1][j + 1] = Math.max(match[i][j], Math.max(match[i + 1][j], match[i][j + 1]));
+                match[i + 1][j + 1] = Math.max(
+                        match[i][j], Math.max(match[i + 1][j], match[i][j + 1])
+                    );
             }
         }
     }
-    return match[a.length()][b.length()];
+
+    int m = match[a.length()][b.length()];
+
+    return 1. * (m * m) / (a.length() * b.length());
 }
 ```
 > 此处对两个字符串的相似度进行相乘，其实也可以进行平均，相乘的方法对字符串中的异常值处罚力度更大，数据相似度普遍较高的情况下，结果的区分度更高。
