@@ -17,7 +17,7 @@ date: 2018-09-28 01:02 +0800
 
 简单检索了一下，比较匹配的算法是编辑距离算法，编辑距离算法的基本思路是将两个字符串分别作为原始字符串和目标字符串，相互对比，计算从原始字符串需要经过多少次编辑（插入、替换、删除）能够得到目标字符串。
 比较直接的思路是用递归算法，可以用动态规划优化，这里直接给出编辑距离计算的代码：
-```
+```java
 public static Integer distance(String a, String b) {
     if (a.length() == 0) {
         return b.length();
@@ -53,7 +53,7 @@ public static Integer distance(String a, String b) {
 }
 ```
 编辑距离算法比较简单，算法的核心在于在字符不相等的情况下如何计算当前的编辑距离。编辑距离的思路比较简单，也可以清晰的解释结果的含义，但是与字符串长度相关性不高，在数据中字符串长度差异较大的场景下，需要将编辑距离与字符串长度综合考虑。比较合理的方法是：
-```
+```java
 public static Double si(String a, String b) {
     Integer d = distance(a, b);
     return 1. - (d * 1.0) / (a.length() + b.length());
@@ -62,7 +62,7 @@ public static Double si(String a, String b) {
 计算比较简单，但是在某些边界条件下对比会产生值，比较诡异，如两个完全不相同的字符串匹配：`"abcd"`, `"qwer"`，相似度达到`0.5`，当然为了更加合理的匹配可以给距离乘2，又会在`""`与`"abcd"`这种场景下发生异常（结果为`-1`）。
 
 为了计算更合理的相似度，转变思路，从编辑距离的反方向入手，以原字符串向目标字符串编辑的过程中保留的字符的长度为依据，综合考虑保留字符在两个字符串之间所占比例的，得到相似度，代码如下：
-```
+```java
 public static Double similarity(String a, String b) {
     if (a == null || b == null) {
         return null;
