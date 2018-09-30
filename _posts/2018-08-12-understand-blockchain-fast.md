@@ -2,6 +2,7 @@
 layout: post
 title: "DIY区块链"
 date: 2018-08-12 02:10 +0800
+tags: algorithm
 ---
 <!-- TOC -->
 

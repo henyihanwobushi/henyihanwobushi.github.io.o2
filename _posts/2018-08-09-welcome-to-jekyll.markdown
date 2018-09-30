@@ -2,7 +2,7 @@
 layout: post
 title:  "Flag"
 date:   2018-08-09 01:11:18 +0800
-categories: jekyll update
+tags: [personal]
 ---
 
 为了让这个博客不至于烂尾, 开篇先立几个Flag为敬：

@@ -2,6 +2,7 @@
 layout: post
 title: Hdfs commands(不定期更新)
 date: 2018-08-10 10:08 +0800
+tags: hadoop
 ---
 
 * 检查各个 *datanode* 的情况, 文件会在 *namenode* 上的 *log* 文件夹生成

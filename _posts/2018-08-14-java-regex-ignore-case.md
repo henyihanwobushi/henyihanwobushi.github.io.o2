@@ -2,6 +2,7 @@
 layout: post
 title: Java正则忽略大小写
 date: 2018-08-14 19:44 +0800
+tags: language
 ---
 
 Java的正则表达式支持在正则中直接添加修饰符，以调整正则匹配的模式：

@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: HARD2SAY
+title: 歪理斜说
 email: henyihanwobushi@gmail.com
-author: Donsen Hong
+author: 洪东升 
 description: >- # this means to ignore newlines until "baseurl:"
   这世界混乱且疯狂，有些事，很难讲。
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -28,6 +28,8 @@ theme: minima
 plugins:
   - jekyll-feed
 
+minima:
+  date_format: "%Y-%m-%d"
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

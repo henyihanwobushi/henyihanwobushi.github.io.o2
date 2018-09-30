@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Nginx tcp proxy
+title: Nginx tcp 请求转发
+tags: linux
 ---
 
 Nginx 默认只提供了*http*服务的示例，并且提供了*conf.d*文件夹，进行*http*服务相关的配置，配置以及结构都不适合tcp转发。对```/etc/nginx/nginx.conf```文件中与```http {#...}```同级，添加：
