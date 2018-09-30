@@ -6,5 +6,8 @@ deploy:
 	@git push origin master
 
 new:
-	# bundle exec jekyll post $@
-	echo $(filter-out $@,$(MAKECMDGOALS))
+	@bundle exec jekyll draft "$(filter-out $@,$(MAKECMDGOALS))"
+
+pub:
+	@bundle exec jekyll publish "$(filter-out $@,$(MAKECMDGOALS))"
+
