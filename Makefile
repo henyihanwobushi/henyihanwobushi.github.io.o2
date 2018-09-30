@@ -1,7 +1,6 @@
 NOW=`date +'%Y-%m-%d %H:%M:%S'`
 
 deploy:
-	echo $(NOW)
 	git add .
-	git commit -m "update at "
+	git commit -m "update at $(NOW)"
 	# git push origin master
