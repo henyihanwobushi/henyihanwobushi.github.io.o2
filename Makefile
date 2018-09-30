@@ -4,6 +4,7 @@ deploy:
 	@git add .
 	@git commit -m "update at $(NOW)"
 	@git push origin master
+	open "http://henyihanwobushi.github.io"
 
 new:
 	@bundle exec jekyll draft "$(filter-out $@,$(MAKECMDGOALS))"
