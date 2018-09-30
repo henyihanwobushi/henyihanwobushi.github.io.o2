@@ -1,0 +1,116 @@
+Configuration file: /projects/blog/_config.yml
+            Source: /projects/blog
+       Destination: /projects/blog/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 4.356 seconds.
+ Auto-regeneration: enabled for '/projects/blog'
+    Server address: http://127.0.0.1:4000
+  Server running... press ctrl-c to stop.
+      Regenerating: 2 file(s) changed at 2018-09-30 23:58:24
+                    jekyll-server.log
+                    Makefile
+                    ...done in 4.261355 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-09-30 23:58:29
+                    _drafts/make.md
+                    ...done in 4.182203 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-09-30 23:58:40
+                    _posts/2018-09-30-new.md
+                    ...done in 4.24075 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:04:42
+                    _drafts/make.md
+                    ...done in 3.979278 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:05:53
+                    jekyll-server.log
+                    ...done in 4.630538 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:05:58
+                    jekyll-server.pid
+                    ...done in 4.11571 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:06:02
+                    _drafts/make.md
+                    ...done in 3.919907 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:06:06
+                    _drafts/make.md
+                    ...done in 3.878122 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:10:55
+                    _drafts/make.md
+                    ...done in 4.10911 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:11:58
+                    _drafts/make.md
+                    ...done in 3.91968 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:12:02
+                    _drafts/make.md
+                    ...done in 4.043102 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:12:09
+                    _drafts/make.md
+                    ...done in 4.210507 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:12:26
+                    _drafts/make.md
+                    ...done in 3.878063 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:14:16
+                    _drafts/make.md
+                    ...done in 3.890192 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:19:56
+                    _drafts/make.md
+                    ...done in 3.937223 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:20:12
+                    _drafts/make.md
+                    ...done in 4.196668 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:20:34
+                    _drafts/make.md
+                    ...done in 4.439333 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:20:39
+                    _drafts/make.md
+                    ...done in 3.839235 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:23:59
+                    _drafts/make.md
+                    ...done in 4.265953 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:24:22
+                    _drafts/make.md
+                    ...done in 4.212409 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:24:26
+                    _drafts/make.md
+                    ...done in 4.188727 seconds.
+
+      Regenerating: 2 file(s) changed at 2018-10-01 00:25:40
+                    _posts/2018-10-01-make.md
+                    _drafts/make.md
+                    ...done in 3.959521 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:27:50
+                    _drafts/make.md
+                    ...done in 4.337498 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:31:23
+                    _drafts/make.md
+                    ...done in 5.088496 seconds.
+
+      Regenerating: 1 file(s) changed at 2018-10-01 00:32:01
+                    _posts/2018-10-01-make.md
+                    ...done in 4.304083 seconds.
+
+      Regenerating: 2 file(s) changed at 2018-10-01 00:32:05
+                    _posts/2018-10-01-make.md
+                    _drafts/make.md
+                    ...done in 4.430717 seconds.
+
