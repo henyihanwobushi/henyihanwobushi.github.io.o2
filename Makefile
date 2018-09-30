@@ -1,4 +1,4 @@
-NOW=$(date +'%Y-%m-%d %H:%M:%S')
+NOW=date +'%Y-%m-%d %H:%M:%S'
 
 deploy:
 	echo $(NOW)
