@@ -1,3 +1,9 @@
+---
+layout: post
+title: _drafts/mix.md
+date: 2018-10-08 16:20 +0800
+---
+
 1. 小跳蛙
 2. 爱上幼儿园
 3. 少林英雄
