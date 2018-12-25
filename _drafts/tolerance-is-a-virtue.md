@@ -10,3 +10,7 @@ title: 有容乃大
 最近读了两本关于心理学的书：《跃升》、《走出恐惧》，想要寻找一些问题的答案。这些问题包括：如何控制自己的情绪；如何与他人相处；如何面对孤独。虽然答案没找到，但我认为明确的问题比答案更重要。
 
 两本书的作者都是心理学出身，为解决与他人相处的问题，给出的解决方案都是从发现自身缺点，改善自身入手。
+
+处世之道，没有什么捷径
+
+-Djava.security.auth.login.config=/home/hdfs-user/jaas.conf -Djava.security.krb5.conf=/etc/krb5.conf -Djavax.security.auth.useSubjectCredsOnly=false

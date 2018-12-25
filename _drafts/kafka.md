@@ -3,6 +3,10 @@ layout: post
 title: kafka
 ---
 
+# Kafka commands
+
+*Kafka* 常用命令列表：
+
 ```bash
 # topic list
 /usr/hdp/current/kafka-broker/bin/kafka-topics.sh --zookeeper tdp01:2181/kafka_10_1 --list
