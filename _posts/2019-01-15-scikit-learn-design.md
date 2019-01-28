@@ -37,4 +37,3 @@ Existing building blocks are reused as much as possible. For example, it is easy
 # Sensible defaults
 
 Scikit-Learn provides reasonable default values for most parameters, making it easy to create a baseline working system quickly.
-
